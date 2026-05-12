@@ -1,0 +1,12 @@
+utilities\RandomDataUtility.class
+pages\LoginPage.class
+utilities\ScreenshotUtility.class
+pages\HomePage.class
+utilities\ExtendReportUtility.class
+utilities\ExcelUtility.class
+utilities\PageUtility.class
+pages\ManageContactPage.class
+constant\Constant.class
+pages\ManageNewsPage.class
+utilities\WaitUtility.class
+pages\AdminUsersPage.class

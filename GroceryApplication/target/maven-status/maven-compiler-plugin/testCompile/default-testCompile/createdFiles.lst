@@ -1,0 +1,8 @@
+textscripts\HomeTest.class
+reportgeneration\Listeners.class
+textscripts\ManageNewsTest.class
+textscripts\ManageContactTest.class
+textscripts\LoginTest.class
+mainprojectcore\MainProjectBase.class
+textscripts\AdminUsersTest.class
+retry\Retry.class

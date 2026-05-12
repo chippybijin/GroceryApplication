@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="multiBrowser" parallel="classes">
+	<test thread-count="5" name="Test1">
+	<parameter name="browsers" value="Chrome"></parameter>
+		<classes>
+			<class name="textscripts.ManageContactTest">
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Test2">
+	<parameter name="browsers" value="Firefox"></parameter>
+		<classes>
+			<class name="textscripts.HomeTest">
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Parallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test1(failed)">
+    <parameter name="browsers" value="Chrome"/>
+    <classes>
+      <class name="textscripts.ManageContactTest">
+        <methods>
+          <include name="driverQuit"/>
+          <include name="initializeBrowser"/>
+          <include name="verifyManageContactAction"/>
+        </methods>
+      </class> <!-- textscripts.ManageContactTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Parallel] -->
