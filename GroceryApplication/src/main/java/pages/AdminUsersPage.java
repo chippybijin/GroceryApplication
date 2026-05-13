@@ -66,11 +66,21 @@ public class AdminUsersPage {
 	}
 	
 	public AdminUsersPage mainSearchBtnClick() {
-		searchButtonMain.click();
+		searchButtonMain.click();	
+		return this;
+	}
+	
+	public AdminUsersPage enterSearchAdminUserName() {
 		usernameSearch.sendKeys("chippy");
+		return this;
+	}
+	
+	public AdminUsersPage selectUserType() {
 		pageObj.selectByVisibleText(userTypeSearch,"Admin");
-		//Select userTypeforSearch = new Select(userTypeSearch);
-		//userTypeforSearch.selectByVisibleText("Admin");
+		return this;
+	}
+	
+	public AdminUsersPage searchAdminUserBtnClick() {
 		searchButton.click();
 		return this;
 	}
@@ -78,4 +88,14 @@ public class AdminUsersPage {
 	public String getSearchedUserName() {
 		return matchingAdminUser.getText();
 	}
+	
+	/*public AdminUsersPage mainSearchBtnClick() {
+	searchButtonMain.click();
+	usernameSearch.sendKeys("chippy");
+	pageObj.selectByVisibleText(userTypeSearch,"Admin");
+	//Select userTypeforSearch = new Select(userTypeSearch);
+	//userTypeforSearch.selectByVisibleText("Admin");
+	searchButton.click();
+	return this;
+	}*/
 }

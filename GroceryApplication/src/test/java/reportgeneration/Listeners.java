@@ -44,6 +44,7 @@ public class Listeners implements ITestListener{
 
 	try {
 
+    //getSuperclass()
 	driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
 	.get(result.getInstance());
 	} catch (IllegalArgumentException e) {

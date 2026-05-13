@@ -43,7 +43,8 @@ public class AdminUsersTest extends MainProjectBase{
 		loginpage.enterUserName(userNameValue).enterPassword(passwordValue);
 		home = loginpage.loginBtnClick();
 		adminuserspage = home.clickAdminUsersMoreInfo();
-		adminuserspage.mainSearchBtnClick();
+		adminuserspage.mainSearchBtnClick().enterSearchAdminUserName().selectUserType().searchAdminUserBtnClick();
+		
 		String searchedUserName = "chippy";
 		String actualUserName = adminuserspage.getSearchedUserName();
 		Assert.assertEquals(searchedUserName, actualUserName, Constant.ADMINUSERSEARCHERROR);
